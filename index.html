@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pyae Phyo Aung — Software Engineer</title>
+  <meta name="description" content="Software engineer in Mandalay, Myanmar. I build full-stack products with Laravel, Flutter, React and AWS — from legal-tech AI and health platforms to logistics and enterprise operations.">
+  <meta name="author" content="Pyae Phyo Aung">
+  <meta name="theme-color" content="#0b0c0e">
+  <meta name="color-scheme" content="dark light">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/img/favicon.svg">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Pyae Phyo Aung — Software Engineer">
+  <meta property="og:description" content="Full-stack engineer building quietly ambitious software with Laravel, Flutter, React and AWS. Based in Mandalay, Myanmar.">
+  <meta property="og:image" content="assets/img/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Pyae Phyo Aung — full-stack engineer building quietly ambitious software.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Pyae Phyo Aung — Software Engineer">
+  <meta name="twitter:description" content="Full-stack engineer building quietly ambitious software with Laravel, Flutter, React and AWS.">
+  <meta name="twitter:image" content="assets/img/og.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+Myanmar:wght@400;500;600&family=Noto+Serif+Myanmar:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <script>
+    (function () {
+      document.documentElement.classList.add('js');
+      try {
+        var saved = localStorage.getItem('theme');
+        if (saved === 'light' || saved === 'dark') {
+          document.documentElement.setAttribute('data-theme', saved);
+        }
+        if (localStorage.getItem('lang') === 'my') {
+          document.documentElement.setAttribute('lang', 'my');
+        }
+      } catch (e) {}
+    })();
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Pyae Phyo Aung",
+    "jobTitle": "Software Engineer",
+    "email": "mailto:pyaep2863@gmail.com",
+    "url": "https://github.com/githabnew123",
+    "address": { "@type": "PostalAddress", "addressLocality": "Mandalay", "addressCountry": "MM" },
+    "worksFor": { "@type": "Organization", "name": "Global Innovation Consulting" },
+    "knowsAbout": ["Laravel", "PHP", "Flutter", "Dart", "React", "TypeScript", "AWS", "Terraform", "PostgreSQL", "MySQL", "Docker"],
+    "sameAs": ["https://github.com/githabnew123"]
+  }
+  </script>
+
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main"><span data-i18n="skip">Skip to content</span></a>
+
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="Pyae Phyo Aung — home" data-i18n-aria-label="aria.brand">
+      <span class="brand-mark" aria-hidden="true">P</span>
+      <span class="brand-text">Pyae Phyo Aung<span class="brand-dot">.</span></span>
+    </a>
+
+    <nav class="site-nav" id="primary-nav" aria-label="Primary" data-i18n-aria-label="aria.nav">
+      <a href="#work" data-i18n="nav.work">Work</a>
+      <a href="#more" data-i18n="nav.more">More</a>
+      <a href="#about" data-i18n="nav.about">About</a>
+      <a href="#stack" data-i18n="nav.stack">Toolbox</a>
+      <a class="nav-cta" href="#contact">
+        <span data-i18n="nav.cta">Let’s talk</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+      </a>
+    </nav>
+
+    <div class="header-tools">
+      <button class="lang-toggle" type="button" aria-label="Switch to Burmese" aria-pressed="false">
+        <span class="lang-opt lang-opt--en" lang="en">EN</span>
+        <span class="lang-opt lang-opt--my" lang="my">မြန်မာ</span>
+      </button>
+      <button class="icon-btn theme-toggle" type="button" aria-label="Switch to light mode" aria-pressed="false">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 14.3A8.5 8.5 0 0 1 9.7 3.5 8.5 8.5 0 1 0 20.5 14.3Z"/></svg>
+      </button>
+      <button class="icon-btn menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow reveal" data-reveal>
+            <span class="status-dot" aria-hidden="true"></span>
+            <span data-i18n="hero.eyebrow">Software engineer · Mandalay, Myanmar</span>
+          </p>
+
+          <h1 class="reveal" id="hero-title" data-reveal style="--delay: 80ms" data-i18n="hero.title">
+            Full-stack engineer building <em>quietly ambitious</em> software.
+          </h1>
+
+          <p class="hero-lede reveal" data-reveal style="--delay: 160ms" data-i18n="hero.lede">
+            I work across <strong>Laravel</strong>, <strong>Flutter</strong>, <strong>React</strong> and <strong>AWS</strong> — turning messy real-world operations into products people can trust. Currently at <strong>GIC</strong>, building for Myanmar and Japan.
+          </p>
+
+          <div class="hero-actions reveal" data-reveal style="--delay: 240ms">
+            <a class="btn btn-primary" href="#work">
+              <span data-i18n="hero.viewWork">View selected work</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a class="btn btn-ghost" href="#about" data-i18n="hero.about">More about me</a>
+          </div>
+
+          <p class="hero-footnote reveal" data-reveal style="--delay: 320ms" data-i18n="hero.footnote">
+            Currently building: cited legal AI · a donor network · terminal logistics
+          </p>
+        </div>
+
+        <aside class="hero-card reveal" data-reveal style="--delay: 220ms" aria-label="Profile summary" data-i18n-aria-label="aria.profile">
+          <div class="hero-card-bar">
+            <span class="mono">PPA / 001</span>
+            <span class="status-pill"><span class="status-dot" aria-hidden="true"></span> <span data-i18n="hero.status">Building</span></span>
+          </div>
+
+          <div class="hero-orbit" aria-hidden="true">
+            <span class="orbit-ring ring-a"></span>
+            <span class="orbit-ring ring-b"></span>
+            <span class="orbit-ring ring-c"></span>
+            <span class="orbit-spoke spoke-a"></span>
+            <span class="orbit-spoke spoke-b"></span>
+            <span class="orbit-core"><span>PPA</span><small data-i18n="hero.core">engineer</small></span>
+            <span class="orbit-tag tag-a">Laravel</span>
+            <span class="orbit-tag tag-b">Flutter</span>
+            <span class="orbit-tag tag-c">React</span>
+            <span class="orbit-tag tag-d">AWS</span>
+            <span class="orbit-dot dot-a"></span>
+            <span class="orbit-dot dot-b"></span>
+            <span class="orbit-dot dot-c"></span>
+          </div>
+
+          <dl class="hero-card-meta">
+            <div><dt data-i18n="hero.basedIn">Based in</dt><dd data-i18n="hero.basedValue">Mandalay, MM</dd></div>
+            <div><dt data-i18n="hero.workingAt">Working at</dt><dd>GIC</dd></div>
+            <div><dt data-i18n="hero.localTime">Local time</dt><dd><time id="local-time">--:--</time></dd></div>
+          </dl>
+        </aside>
+      </div>
+
+      <div class="hero-scroll" aria-hidden="true">
+        <span data-i18n="hero.scroll">Scroll to explore</span>
+        <span class="scroll-line"></span>
+      </div>
+    </section>
+
+    <div class="marquee" aria-label="Technologies" data-i18n-aria-label="aria.marquee">
+      <div class="marquee-track">
+        <span>Laravel</span><i>✳</i><span>Flutter</span><i>✳</i><span>React</span><i>✳</i><span>TypeScript</span><i>✳</i><span>AWS</span><i>✳</i><span>PostgreSQL</span><i>✳</i><span>Terraform</span><i>✳</i><span>Docker</span><i>✳</i><span>Tailwind</span><i>✳</i><span>Bedrock</span><i>✳</i>
+        <span aria-hidden="true">Laravel</span><i aria-hidden="true">✳</i><span aria-hidden="true">Flutter</span><i aria-hidden="true">✳</i><span aria-hidden="true">React</span><i aria-hidden="true">✳</i><span aria-hidden="true">TypeScript</span><i aria-hidden="true">✳</i><span aria-hidden="true">AWS</span><i aria-hidden="true">✳</i><span aria-hidden="true">PostgreSQL</span><i aria-hidden="true">✳</i><span aria-hidden="true">Terraform</span><i aria-hidden="true">✳</i><span aria-hidden="true">Docker</span><i aria-hidden="true">✳</i><span aria-hidden="true">Tailwind</span><i aria-hidden="true">✳</i><span aria-hidden="true">Bedrock</span><i aria-hidden="true">✳</i>
+      </div>
+    </div>
+
+    <section class="section work" id="work" aria-labelledby="work-title">
+      <header class="section-head">
+        <p class="section-label reveal" data-reveal data-i18n="work.label"><span>01</span> Selected work</p>
+        <h2 class="reveal" id="work-title" data-reveal style="--delay: 80ms" data-i18n="work.title">Products, platforms and <em>hard operational problems.</em></h2>
+        <p class="section-lede reveal" data-reveal style="--delay: 160ms" data-i18n="work.lede">
+          Four recent builds. Where the work is private, client names, brands and screenshots are withheld — the engineering and the problem are not.
+        </p>
+      </header>
+
+      <div class="case-list">
+        <article class="case reveal" data-reveal>
+          <div class="case-visual case-visual--law">
+            <div class="case-visual-label" data-i18n="case.visualPreview"><span>01</span> Interface preview</div>
+            <div class="phone phone-back" aria-hidden="true">
+              <img src="assets/img/law-home.webp" alt="" width="1179" height="2556" loading="lazy">
+            </div>
+            <div class="phone phone-front">
+              <img src="assets/img/law-answer.webp" alt="Myanmar Law Guide answering a legal question with cited law sections and a permanent legal-information disclaimer" width="1179" height="2556" loading="lazy">
+            </div>
+            <div class="float-chip float-chip--law">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg>
+              <span data-i18n="case.law.chip">Section 26 · cited</span>
+            </div>
+            <div class="visual-glow" aria-hidden="true"></div>
+          </div>
+
+          <div class="case-body">
+            <p class="case-kicker" data-i18n="case.law.kicker"><span>01</span> AI · Legal tech <span>2026</span></p>
+            <h3 data-i18n="case.law.title">Myanmar Law Guide</h3>
+            <p class="case-tagline" data-i18n="case.law.tagline">A bilingual legal-information assistant that answers with citations, not guesses.</p>
+            <p data-i18n="case.law.problem">
+              Myanmar’s laws are scattered across scanned PDFs, decades of amendments and mixed Burmese/English text. A generic chatbot will confidently invent a section number — which is worse than no answer at all.
+            </p>
+            <ul class="case-highlights">
+              <li data-i18n="case.law.h1">OCR pipeline turns scanned law books into searchable text with Tesseract <span class="mono">mya+eng</span>.</li>
+              <li data-i18n="case.law.h2">Section-aware ingestion embeds law chunks into PostgreSQL + <span class="mono">pgvector</span>.</li>
+              <li data-i18n="case.law.h3">Citation-first RAG refuses low-confidence matches and always shows the source section.</li>
+            </ul>
+            <ul class="tags" aria-label="Technologies used" data-i18n-aria-label="aria.tags">
+              <li>Laravel 12</li><li>Flutter</li><li>pgvector</li><li>AWS Bedrock</li><li>Tesseract</li>
+            </ul>
+            <button class="case-link" type="button" data-open-case="law">
+              <span data-i18n="case.read">Read case study</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </button>
+          </div>
+        </article>
+
+        <article class="case reveal" data-reveal>
+          <div class="case-visual case-visual--blood">
+            <div class="case-visual-label" data-i18n="case.blood.visual"><span>02</span> Interface study</div>
+            <div class="phone-ui phone-ui--blood" aria-hidden="true">
+              <div class="ui-status"><span>9:41</span><span class="ui-status-icons">●●●</span></div>
+              <div class="blood-top">
+                <span class="blood-mark">B</span>
+                <strong>BloodLink</strong>
+                <span class="ui-pill">EN / မြ</span>
+              </div>
+              <div class="blood-hero">
+                <small>NEAR YOU</small>
+                <strong>Find a compatible donor</strong>
+                <div class="search-line">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>
+                  Township, blood type…
+                </div>
+              </div>
+              <div class="blood-types"><span class="active">O−</span><span>A+</span><span>B+</span><span>AB+</span></div>
+              <div class="donor">
+                <span class="avatar">CT</span>
+                <span class="donor-copy"><strong>Compatible donor</strong><small>Chanayethazan · 1.2 km</small></span>
+                <span class="ui-badge">Available</span>
+              </div>
+              <div class="donor">
+                <span class="avatar avatar-b">MK</span>
+                <span class="donor-copy"><strong>Compatible donor</strong><small>Mahaaungmyay · 2.4 km</small></span>
+                <span class="ui-badge">Available</span>
+              </div>
+              <div class="donor">
+                <span class="avatar avatar-c">AP</span>
+                <span class="donor-copy"><strong>Compatible donor</strong><small>Aungmyaythazan · 3.1 km</small></span>
+                <span class="ui-badge ui-badge--quiet">Today</span>
+              </div>
+              <div class="privacy-note">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>
+                Phone numbers stay private until a donor accepts.
+              </div>
+            </div>
+            <div class="float-chip float-chip--blood"><span class="chip-dot"></span> <span data-i18n="case.blood.chip">Privacy-first contact</span></div>
+            <div class="visual-glow" aria-hidden="true"></div>
+          </div>
+
+          <div class="case-body">
+            <p class="case-kicker" data-i18n="case.blood.kicker"><span>02</span> Health tech · PWA <span>2026</span></p>
+            <h3 data-i18n="case.blood.title">BloodLink Myanmar</h3>
+            <p class="case-tagline" data-i18n="case.blood.tagline">A privacy-first donor network for a country that coordinates blood on Facebook.</p>
+            <p data-i18n="case.blood.problem">
+              Urgent requests spread through social groups. Donor phone numbers are posted publicly, eligibility is unknown, and receivers waste hours calling people who cannot donate.
+            </p>
+            <ul class="case-highlights">
+              <li data-i18n="case.blood.h1">Compatibility-aware search by blood type, township and live availability.</li>
+              <li data-i18n="case.blood.h2">Contact requests keep numbers hidden until the donor accepts.</li>
+              <li data-i18n="case.blood.h3">90/120-day eligibility engine plus weekly windows and daily check-ins.</li>
+            </ul>
+            <ul class="tags" aria-label="Technologies used" data-i18n-aria-label="aria.tags">
+              <li>Flutter 3.50</li><li>Laravel 12</li><li>Sanctum</li><li>MySQL 8.4</li><li>PWA</li>
+            </ul>
+            <button class="case-link" type="button" data-open-case="blood">
+              <span data-i18n="case.read">Read case study</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </button>
+          </div>
+        </article>
+
+        <article class="case reveal" data-reveal>
+          <div class="case-visual case-visual--terminal">
+            <div class="case-visual-label" data-i18n="case.terminal.visual"><span>03</span> Interface study</div>
+            <div class="browser-ui browser-ui--terminal" aria-hidden="true">
+              <div class="browser-bar">
+                <span class="browser-dots"><i></i><i></i><i></i></span>
+                <span class="browser-url">terminal / operations</span>
+                <span class="live-badge">Live</span>
+              </div>
+              <div class="terminal-grid">
+                <aside class="term-side">
+                  <span class="term-logo">TM</span>
+                  <i class="active"></i><i></i><i></i><i></i><i></i><i></i>
+                </aside>
+                <div class="term-main">
+                  <div class="term-head">
+                    <div><small>MANDALAY OPERATIONS</small><strong>Today at a glance</strong></div>
+                    <span class="term-date">28 Nov</span>
+                  </div>
+                  <div class="term-kpis">
+                    <div><small>Trips</small><strong>128</strong><span>+12%</span></div>
+                    <div><small>Taxis</small><strong>36</strong><span>+4%</span></div>
+                    <div><small>Parcels</small><strong>94</strong><span>+18%</span></div>
+                  </div>
+                  <div class="term-map">
+                    <span class="map-grid"></span>
+                    <span class="route"></span>
+                    <span class="pin p1"></span><span class="pin p2"></span><span class="pin p3"></span>
+                    <span class="map-label">Gate 4 → Bagan</span>
+                  </div>
+                  <div class="term-rows">
+                    <div><span>Trip 204</span><span>Gate 2</span><span class="ok">On time</span></div>
+                    <div><span>Taxi 118</span><span>Gate 5</span><span class="ok">Assigned</span></div>
+                    <div><span>Parcel 091</span><span>Zone 3</span><span class="warn">Pickup</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="float-chip float-chip--terminal"><span class="chip-dot"></span> <span data-i18n="case.terminal.chip">Trips · taxis · parcels</span></div>
+            <div class="visual-glow" aria-hidden="true"></div>
+          </div>
+
+          <div class="case-body">
+            <p class="case-kicker" data-i18n="case.terminal.kicker"><span>03</span> Logistics · Operations <span>2026</span></p>
+            <h3 data-i18n="case.terminal.title">Mandalay Terminal &amp; Delivery</h3>
+            <p class="case-tagline" data-i18n="case.terminal.tagline">One control room for buses, taxis and parcels.</p>
+            <p data-i18n="case.terminal.problem">
+              A busy terminal ran on spreadsheets, phone calls and paper slips. Trips, gates, taxi pickups, parcel deliveries and driver pay lived in different heads.
+            </p>
+            <ul class="case-highlights">
+              <li data-i18n="case.terminal.h1">Admin console for terminals, gates, trip plans and bulk Excel onboarding.</li>
+              <li data-i18n="case.terminal.h2">Taxi dispatch and parcel delivery flows from request to status history.</li>
+              <li data-i18n="case.terminal.h3">Flutter driver app with maps, notifications and live location reporting.</li>
+            </ul>
+            <ul class="tags" aria-label="Technologies used" data-i18n-aria-label="aria.tags">
+              <li>Laravel 11</li><li>Inertia + React</li><li>Flutter</li><li>MySQL</li><li>Maps</li>
+            </ul>
+            <button class="case-link" type="button" data-open-case="terminal">
+              <span data-i18n="case.read">Read case study</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </button>
+          </div>
+        </article>
+
+        <article class="case reveal" data-reveal>
+          <div class="case-visual case-visual--licence">
+            <div class="case-visual-label" data-i18n="case.licence.visual"><span>04</span> Interface study</div>
+            <div class="browser-ui browser-ui--licence" aria-hidden="true">
+              <div class="browser-bar">
+                <span class="browser-dots"><i></i><i></i><i></i></span>
+                <span class="browser-url">licence service / back office</span>
+                <span class="live-badge">Owner</span>
+              </div>
+              <div class="lic-grid">
+                <aside class="lic-side">
+                  <span class="lic-logo">LS</span>
+                  <i class="active"></i><i></i><i></i><i></i><i></i>
+                </aside>
+                <div class="lic-main">
+                  <div class="lic-head">
+                    <div><small>APPLICATIONS</small><strong>Stage overview</strong></div>
+                    <span class="ui-pill">Owner view</span>
+                  </div>
+                  <div class="stage-track">
+                    <span class="done">Intake</span><span class="done">Docs</span><span class="active">Stage 3</span><span>Test</span><span>Issue</span>
+                  </div>
+                  <div class="lic-table">
+                    <div class="lic-row lic-row--head"><span>Case</span><span>Stage</span><span>Team</span><span>Status</span></div>
+                    <div class="lic-row"><span>#1042</span><span>Stage 3</span><span>Team A</span><span class="ok">On track</span></div>
+                    <div class="lic-row"><span>#1043</span><span>Docs</span><span>Team B</span><span class="warn">Waiting</span></div>
+                    <div class="lic-row"><span>#1044</span><span>Test</span><span>Team A</span><span class="ok">Booked</span></div>
+                  </div>
+                  <div class="lic-perms"><span>Owner</span><span>Leader</span><span>Subleader</span><span>Member</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="float-chip float-chip--licence">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg>
+              <span data-i18n="case.licence.chip">Role-aware · audited</span>
+            </div>
+            <div class="visual-glow" aria-hidden="true"></div>
+          </div>
+
+          <div class="case-body">
+            <p class="case-kicker" data-i18n="case.licence.kicker"><span>04</span> Enterprise · Japan <span>2026</span></p>
+            <h3 data-i18n="case.licence.title">Licence Service Platform</h3>
+            <p class="case-tagline" data-i18n="case.licence.tagline">A back office for a Japanese licence-service business — from intake to payroll.</p>
+            <p data-i18n="case.licence.problem">
+              Multi-branch licence services involve agents, appointments, vehicle checks, staged applications, commissions, cash advances and payroll. Spreadsheets could not enforce permissions or show where a case actually stood.
+            </p>
+            <ul class="case-highlights">
+              <li data-i18n="case.licence.h1">Owner / leader / subleader / member hierarchy with a granular permission matrix.</li>
+              <li data-i18n="case.licence.h2">Staged application pipeline with activity logs, comments and audit trails.</li>
+              <li data-i18n="case.licence.h3">Finance, payroll, expenses and signed owner-only backups in one system.</li>
+            </ul>
+            <ul class="tags" aria-label="Technologies used" data-i18n-aria-label="aria.tags">
+              <li>Laravel 11</li><li>React 19</li><li>Tailwind 4</li><li>TanStack Query</li><li>Sanctum</li>
+            </ul>
+            <button class="case-link" type="button" data-open-case="licence">
+              <span data-i18n="case.read">Read case study</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section more" id="more" aria-labelledby="more-title">
+      <header class="section-head section-head--row">
+        <div>
+          <p class="section-label reveal" data-reveal data-i18n="more.label"><span>02</span> More work</p>
+          <h2 class="reveal" id="more-title" data-reveal style="--delay: 80ms" data-i18n="more.title">Other things I’ve <em>shipped and learned from.</em></h2>
+        </div>
+        <div class="filters reveal" data-reveal style="--delay: 140ms" role="group" aria-label="Filter projects" data-i18n-aria-label="aria.filter">
+          <button class="filter is-active" type="button" data-filter="all" aria-pressed="true" data-i18n="more.all">All</button>
+          <button class="filter" type="button" data-filter="product" aria-pressed="false" data-i18n="more.product">Product</button>
+          <button class="filter" type="button" data-filter="client" aria-pressed="false" data-i18n="more.client">Client</button>
+          <button class="filter" type="button" data-filter="lab" aria-pressed="false" data-i18n="more.lab">Lab</button>
+        </div>
+      </header>
+
+      <div class="mini-grid">
+        <article class="mini-card reveal" data-reveal data-category="client">
+          <div class="mini-cover mini-cover--micine" aria-hidden="true">
+            <span class="mini-mono">MC</span>
+            <span class="mini-lines"></span>
+            <span class="mini-flag" data-i18n="mini.private">Private</span>
+          </div>
+          <div class="mini-body">
+            <p class="mini-kicker" data-i18n="mini.micine.kicker">Insurance · Japan</p>
+            <h3 data-i18n="mini.micine.title">Micine / Minum platform</h3>
+            <p data-i18n="mini.micine.desc">Application, customer portal and policy admin for a Japanese insurance product.</p>
+            <ul class="tags tags--sm"><li>Laravel</li><li>React</li><li>AWS</li><li>Rust</li></ul>
+          </div>
+        </article>
+
+        <article class="mini-card reveal" data-reveal data-category="product">
+          <div class="mini-cover mini-cover--car" aria-hidden="true">
+            <span class="mini-mono">CR</span>
+            <span class="mini-lines"></span>
+          </div>
+          <div class="mini-body">
+            <p class="mini-kicker" data-i18n="mini.car.kicker">Mobility · Marketplace</p>
+            <h3 data-i18n="mini.car.title">Car rental platform</h3>
+            <p data-i18n="mini.car.desc">Expo customer app plus a Laravel/Inertia console: listings, bookings, drivers and chat.</p>
+            <ul class="tags tags--sm"><li>Expo</li><li>React Native</li><li>Laravel</li></ul>
+          </div>
+        </article>
+
+        <article class="mini-card reveal" data-reveal data-category="product">
+          <div class="mini-cover mini-cover--chem" aria-hidden="true">
+            <span class="mini-mono">CT</span>
+            <span class="mini-lines"></span>
+          </div>
+          <div class="mini-body">
+            <p class="mini-kicker" data-i18n="mini.chem.kicker">Education · Myanmar</p>
+            <h3 data-i18n="mini.chem.title">ChemTeacher</h3>
+            <p data-i18n="mini.chem.desc">G10–G12 chemistry study app for Myanmar students, with pricing, referrals and resellers.</p>
+            <ul class="tags tags--sm"><li>Flutter</li><li>Laravel</li><li>MySQL</li></ul>
+          </div>
+        </article>
+
+        <article class="mini-card reveal" data-reveal data-category="lab">
+          <div class="mini-cover mini-cover--tf" aria-hidden="true">
+            <span class="mini-mono">TF</span>
+            <span class="mini-lines"></span>
+          </div>
+          <div class="mini-body">
+            <p class="mini-kicker" data-i18n="mini.aws.kicker">Cloud · Learning lab</p>
+            <h3 data-i18n="mini.aws.title">AWS foundations lab</h3>
+            <p data-i18n="mini.aws.desc">EC2, IAM, SSM and S3 remote state — plus a beginner guide in Burmese and English.</p>
+            <ul class="tags tags--sm"><li>Terraform</li><li>AWS</li><li>Writing</li></ul>
+          </div>
+        </article>
+
+        <article class="mini-card reveal" data-reveal data-category="product">
+          <div class="mini-cover mini-cover--petro" aria-hidden="true">
+            <span class="mini-mono">PT</span>
+            <span class="mini-lines"></span>
+          </div>
+          <div class="mini-body">
+            <p class="mini-kicker" data-i18n="mini.petro.kicker">Retail · Operations</p>
+            <h3 data-i18n="mini.petro.title">Petro fuel station</h3>
+            <p data-i18n="mini.petro.desc">Purchases, sales, stock balances, suppliers, payments and financial records.</p>
+            <ul class="tags tags--sm"><li>Laravel</li><li>Inertia</li><li>TypeScript</li></ul>
+            <a class="mini-link" href="https://github.com/githabnew123/petro" target="_blank" rel="noopener noreferrer">
+              <span data-i18n="mini.github">View on GitHub</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="mini-card reveal" data-reveal data-category="product">
+          <div class="mini-cover mini-cover--bot" aria-hidden="true">
+            <span class="mini-mono">DB</span>
+            <span class="mini-lines"></span>
+            <span class="mini-flag" data-i18n="mini.private">Private</span>
+          </div>
+          <div class="mini-body">
+            <p class="mini-kicker" data-i18n="mini.bot.kicker">Automation · Telegram</p>
+            <h3 data-i18n="mini.bot.title">Delivery bot</h3>
+            <p data-i18n="mini.bot.desc">A bot that moves delivery requests out of chat scroll and into a trackable flow.</p>
+            <ul class="tags tags--sm"><li>Python</li><li>Telegram</li><li>Ops</li></ul>
+          </div>
+        </article>
+      </div>
+
+      <p class="archive-note reveal" data-reveal data-i18n="more.archive">
+        Also in the archive: event management, CRM, loyalty and community news platforms. Some client work is under NDA; I’m happy to talk through the engineering privately.
+      </p>
+    </section>
+
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <header class="section-head">
+        <p class="section-label reveal" data-reveal data-i18n="about.label"><span>03</span> About</p>
+      </header>
+
+      <div class="about-grid">
+        <div class="about-lede reveal" data-reveal>
+          <h2 id="about-title" data-i18n="about.title">I like the part where <em>real operations</em> meet the schema.</h2>
+          <div class="about-signature">
+            <span class="monogram-sm">PPA</span>
+            <span>Pyae Phyo Aung<br><small data-i18n="about.signature">Software engineer · Mandalay</small></span>
+          </div>
+
+          <div class="now-card">
+            <p class="now-label" data-i18n="about.now">Now</p>
+            <ul>
+              <li><span data-i18n="about.nowBuilding">Building</span><p data-i18n="about.nowBuildingText">Cited legal AI, BloodLink and terminal operations.</p></li>
+              <li><span data-i18n="about.nowLearning">Learning</span><p data-i18n="about.nowLearningText">AWS, Terraform modules and OIDC-based CI/CD.</p></li>
+              <li><span data-i18n="about.nowWriting">Writing</span><p data-i18n="about.nowWritingText">A beginner-friendly AWS guide in Burmese and English.</p></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="about-copy reveal" data-reveal style="--delay: 120ms">
+          <p class="about-intro" data-i18n="about.p1">
+            I’m a software engineer at <strong>Global Innovation Consulting (GIC)</strong>, where I build products for Myanmar and Japan across legal tech, healthcare, logistics, education and insurance.
+          </p>
+          <p data-i18n="about.p2">
+            My favourite work sits where software meets messy real-world operations: a dispatcher coordinating trips, a donor finding a compatible match, a student getting a clear answer, a branch team closing a licence case. I care about the unglamorous parts — permissions, audit trails, data privacy, failure states, and the copy that tells someone what to do next.
+          </p>
+          <p data-i18n="about.p3">
+            I started in PHP and Laravel. Today I move between Laravel APIs, Flutter and React clients, and AWS infrastructure. I’m currently going deeper into DevOps with Terraform, IAM and SSM — and writing a beginner-friendly AWS guide in Burmese and English as I learn.
+          </p>
+
+          <div class="trajectory" aria-label="Career trajectory">
+            <div class="trajectory-row">
+              <span class="trajectory-when" data-i18n="about.tr1.when">Shipping</span>
+              <div><h3 data-i18n="about.tr1.title">Product engineering at GIC</h3><p data-i18n="about.tr1.desc">AI legal guidance, BloodLink, terminal logistics and a Japanese licence-service platform — from schema and API to the empty state and the deploy.</p></div>
+            </div>
+            <div class="trajectory-row">
+              <span class="trajectory-when" data-i18n="about.tr2.when">Earlier</span>
+              <div><h3 data-i18n="about.tr2.title">Enterprise and client platforms</h3><p data-i18n="about.tr2.desc">Japanese insurance systems, a car-rental marketplace and ChemTeacher’s learning and reseller tooling.</p></div>
+            </div>
+            <div class="trajectory-row">
+              <span class="trajectory-when" data-i18n="about.tr3.when">Next</span>
+              <div><h3 data-i18n="about.tr3.title">Platform engineering</h3><p data-i18n="about.tr3.desc">Deeper AWS, Terraform modules, OIDC-based CI/CD and the habits that make systems boring to operate.</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="principles">
+        <article class="principle reveal" data-reveal>
+          <span class="principle-num">01</span>
+          <h3 data-i18n="about.pr1.title">Clarity beats cleverness.</h3>
+          <p data-i18n="about.pr1.desc">Ship the version people can understand, maintain and hand over. The clever version can wait.</p>
+        </article>
+        <article class="principle reveal" data-reveal style="--delay: 80ms">
+          <span class="principle-num">02</span>
+          <h3 data-i18n="about.pr2.title">Privacy is a feature.</h3>
+          <p data-i18n="about.pr2.desc">Hide phone numbers, minimise data, ask before revealing, and make deletion real — not a checkbox.</p>
+        </article>
+        <article class="principle reveal" data-reveal style="--delay: 160ms">
+          <span class="principle-num">03</span>
+          <h3 data-i18n="about.pr3.title">Own the whole path.</h3>
+          <p data-i18n="about.pr3.desc">From database constraint to button label to the deploy that keeps it alive. Handoffs are where trust leaks.</p>
+        </article>
+        <article class="principle reveal" data-reveal style="--delay: 240ms">
+          <span class="principle-num">04</span>
+          <h3 data-i18n="about.pr4.title">Learn in public.</h3>
+          <p data-i18n="about.pr4.desc">Document the lab, share the guide, keep notes. Teaching is how I find the holes in my own understanding.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section stack" id="stack" aria-labelledby="stack-title">
+      <header class="section-head section-head--row">
+        <div>
+          <p class="section-label reveal" data-reveal data-i18n="stack.label"><span>04</span> Toolbox</p>
+          <h2 class="reveal" id="stack-title" data-reveal style="--delay: 80ms" data-i18n="stack.title">The tools I reach for <em>and why.</em></h2>
+        </div>
+        <p class="stack-note reveal" data-reveal style="--delay: 140ms" data-i18n="stack.note">
+          Deep in Laravel and Flutter. Comfortable across the stack. Deliberately going deeper into cloud infrastructure.
+        </p>
+      </header>
+
+      <div class="stack-grid">
+        <article class="stack-card reveal" data-reveal>
+          <span class="stack-num">01</span>
+          <h3 data-i18n="stack.backend.title">Backend</h3>
+          <p data-i18n="stack.backend.desc">APIs and data models that hold up under real operations.</p>
+          <ul class="tags tags--sm"><li>PHP 8</li><li>Laravel 6–12</li><li>Sanctum</li><li>REST</li><li>MySQL</li><li>PostgreSQL</li><li>pgvector</li></ul>
+        </article>
+        <article class="stack-card reveal" data-reveal style="--delay: 60ms">
+          <span class="stack-num">02</span>
+          <h3 data-i18n="stack.frontend.title">Frontend</h3>
+          <p data-i18n="stack.frontend.desc">Interfaces that stay fast and legible when the data gets messy.</p>
+          <ul class="tags tags--sm"><li>React 19</li><li>TypeScript</li><li>Inertia</li><li>Tailwind</li><li>TanStack Query</li><li>Vite</li><li>Redux</li></ul>
+        </article>
+        <article class="stack-card reveal" data-reveal style="--delay: 120ms">
+          <span class="stack-num">03</span>
+          <h3 data-i18n="stack.mobile.title">Mobile</h3>
+          <p data-i18n="stack.mobile.desc">One codebase, native-feeling flows, offline-aware thinking.</p>
+          <ul class="tags tags--sm"><li>Flutter</li><li>Dart</li><li>Material 3</li><li>Expo</li><li>React Native</li><li>NativeWind</li></ul>
+        </article>
+        <article class="stack-card reveal" data-reveal style="--delay: 180ms">
+          <span class="stack-num">04</span>
+          <h3 data-i18n="stack.cloud.title">Cloud &amp; DevOps</h3>
+          <p data-i18n="stack.cloud.desc">Infrastructure I can explain, reproduce and hand over.</p>
+          <ul class="tags tags--sm"><li>AWS</li><li>Terraform</li><li>Docker</li><li>EC2</li><li>S3</li><li>IAM</li><li>SSM</li><li>Nginx</li></ul>
+        </article>
+        <article class="stack-card reveal" data-reveal style="--delay: 240ms">
+          <span class="stack-num">05</span>
+          <h3 data-i18n="stack.ai.title">AI &amp; data</h3>
+          <p data-i18n="stack.ai.desc">Retrieval that cites its sources or admits it doesn’t know.</p>
+          <ul class="tags tags--sm"><li>RAG</li><li>AWS Bedrock</li><li>Claude</li><li>Titan</li><li>pgvector</li><li>Tesseract</li><li>Ollama</li></ul>
+        </article>
+        <article class="stack-card reveal" data-reveal style="--delay: 300ms">
+          <span class="stack-num">06</span>
+          <h3 data-i18n="stack.craft.title">Product craft</h3>
+          <p data-i18n="stack.craft.desc">The details that make software feel trustworthy.</p>
+          <ul class="tags tags--sm"><li>Bilingual UX</li><li>RBAC</li><li>Audit trails</li><li>Payments</li><li>Excel import/export</li><li>Maps</li></ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="contact-inner">
+        <p class="section-label reveal" data-reveal data-i18n="contact.label"><span>05</span> Contact</p>
+        <h2 class="reveal" id="contact-title" data-reveal style="--delay: 80ms" data-i18n="contact.title">Have a problem worth <em>building for?</em></h2>
+        <p class="contact-lede reveal" data-reveal style="--delay: 160ms" data-i18n="contact.lede">
+          I’m open to conversations about product engineering, platform work, or hard operational problems. The fastest way to reach me is email.
+        </p>
+
+        <a class="email-link reveal" href="mailto:pyaep2863@gmail.com" data-reveal style="--delay: 220ms">
+          pyaep2863@gmail.com
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+        </a>
+
+        <div class="contact-actions reveal" data-reveal style="--delay: 280ms">
+          <a class="btn btn-primary" href="mailto:pyaep2863@gmail.com">
+            <span data-i18n="contact.start">Start a conversation</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <button class="btn btn-ghost copy-email" type="button" data-email="pyaep2863@gmail.com" aria-label="Copy email address to clipboard" data-i18n="contact.copy">Copy email</button>
+          <a class="btn btn-ghost" href="https://github.com/githabnew123" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06.9 1.57 2.36 1.12 2.94.86.09-.67.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05A9.36 9.36 0 0 1 12 6.84c.85 0 1.71.12 2.51.34 1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.25 10.25 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg>
+            GitHub
+          </a>
+        </div>
+
+        <div class="contact-meta reveal" data-reveal style="--delay: 340ms">
+          <span data-i18n="contact.where">Mandalay, Myanmar</span>
+          <span>UTC+6:30 · <time id="local-time-2">--:--</time> <span data-i18n="contact.local">local</span></span>
+          <span data-i18n="contact.reply">Replies within a day or two</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>© <span id="year">2026</span> Pyae Phyo Aung</span>
+    <span data-i18n="footer.built">Built from scratch with HTML, CSS &amp; JavaScript.</span>
+    <a href="#top"><span data-i18n="footer.top">Back to top</span> <span aria-hidden="true">↑</span></a>
+  </footer>
+
+  <dialog class="case-dialog" id="case-dialog" aria-labelledby="dialog-title">
+    <div class="dialog-shell">
+      <header class="dialog-head">
+        <div>
+          <p class="dialog-kicker" id="dialog-kicker"></p>
+          <h2 id="dialog-title"></h2>
+          <p class="dialog-tagline" id="dialog-tagline"></p>
+        </div>
+        <button class="icon-btn dialog-close" type="button" aria-label="Close case study" data-i18n-aria-label="aria.closeCase">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+        </button>
+      </header>
+      <div class="dialog-body">
+        <div class="dialog-meta" id="dialog-meta"></div>
+        <div class="dialog-sections" id="dialog-sections"></div>
+      </div>
+    </div>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <noscript>
+    <style>
+      [data-reveal] { opacity: 1 !important; transform: none !important; }
+      .cursor-glow, .scroll-progress { display: none; }
+    </style>
+  </noscript>
+
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
