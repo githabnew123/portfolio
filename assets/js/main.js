@@ -366,9 +366,9 @@
       note: "Client delivery — organisation name and operational screenshots are withheld."
     },
     licence: {
-      kicker: "04 · Enterprise / Japan · 2026",
+      kicker: "04 · Enterprise · 2026",
       title: "Licence Service Platform",
-      tagline: "A back office for a Japanese licence-service business — from intake to payroll.",
+      tagline: "A back office for a licence-service business — from intake to payroll.",
       meta: [
         ["Year", "2026"],
         ["Status", "Client delivery"],
@@ -388,7 +388,7 @@
             "Appointments, direct vehicle checks, driver presence and reapply flows.",
             "Agents, service fees, expenses, cash advances, salary history and financial reports.",
             "OTP-based password reset and short-lived signed backup downloads available only to the owner.",
-            "A Japanese UI built with React 19, PrimeReact, Tailwind 4 and TanStack Query."
+            "A UI built with React 19, PrimeReact, Tailwind 4 and TanStack Query."
           ]
         },
         {
@@ -517,9 +517,9 @@
       note: "ဖောက်သည်အတွက် ပေးအပ်မှု — အဖွဲ့အစည်းအမည်နှင့် လုပ်ငန်းလည်ပတ်မှု screenshot များကို ချန်လှပ်ထားသည်။"
     },
     licence: {
-      kicker: "04 · လုပ်ငန်းကြီး / ဂျပန် · 2026",
+      kicker: "04 · လုပ်ငန်းကြီး · 2026",
       title: "လိုင်စင်ဝန်ဆောင်မှု ပလက်ဖောင်း",
-      tagline: "ဂျပန် လိုင်စင်ဝန်ဆောင်မှုလုပ်ငန်းအတွက် ရုံးခန်းနောက်ခံစနစ် — လျှောက်လွှာလက်ခံမှုမှ လုပ်ခငွေအထိ။",
+      tagline: "လိုင်စင်ဝန်ဆောင်မှုလုပ်ငန်းအတွက် ရုံးခန်းနောက်ခံစနစ် — လျှောက်လွှာလက်ခံမှုမှ လုပ်ခငွေအထိ။",
       meta: [
         ["နှစ်", "2026"],
         ["အခြေအနေ", "ဖောက်သည်အတွက် ပေးအပ်ပြီး"],
@@ -539,7 +539,7 @@
             "ချိန်းဆိုမှုများ၊ တိုက်ရိုက် ယာဉ်စစ်ဆေးမှုများ၊ ယာဉ်မောင်း တည်ရှိမှုနှင့် ပြန်လည်လျှောက်ထားမှု လုပ်ငန်းစဉ်များ။",
             "ကိုယ်စားလှယ်များ၊ ဝန်ဆောင်မှုကြေးများ၊ အသုံးစရိတ်များ၊ ငွေကြိုထုတ်မှုများ၊ လုပ်ခမှတ်တမ်းနှင့် ဘဏ္ဍာရေးအစီရင်ခံစာများ။",
             "OTP အခြေခံ စကားဝှက် ပြန်လည်သတ်မှတ်မှုနှင့် ပိုင်ရှင်သာ ရယူနိုင်သော သက်တမ်းတိုလက်မှတ်ရေးထိုး backup download များ။",
-            "React 19၊ PrimeReact၊ Tailwind 4 နှင့် TanStack Query ဖြင့် တည်ဆောက်ထားသော ဂျပန်ဘာသာ UI။"
+            "React 19၊ PrimeReact၊ Tailwind 4 နှင့် TanStack Query ဖြင့် တည်ဆောက်ထားသော UI။"
           ]
         },
         {
