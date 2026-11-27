@@ -193,7 +193,7 @@
   var meta = {
     en: {
       title: "Pyae Phyo Aung — Software Engineer",
-      description: "Software engineer in Mandalay, Myanmar. I build full-stack products with Laravel, Flutter, React and AWS — from legal-tech AI and health platforms to logistics and enterprise operations."
+      description: "Full-stack software engineer in Mandalay, Myanmar. I build products with Laravel, Flutter, React and AWS — legal AI, health, logistics and enterprise systems."
     },
     my: {
       title: "Pyae Phyo Aung — ဆော့ဖ်ဝဲအင်ဂျင်နီယာ",
@@ -220,7 +220,7 @@
   var current = "en";
 
   function t(key) {
-    return dict[key] || "";
+    return current === "my" ? (dict[key] || "") : "";
   }
 
   function apply(lang, options) {
@@ -263,7 +263,7 @@
     }
 
     try {
-      window.dispatchEvent(new CustomEvent("portfolio:langchange", { detail: { lang: current } }));
+      document.dispatchEvent(new CustomEvent("portfolio:langchange", { detail: { lang: current }, bubbles: true }));
     } catch (e) {}
   }
 
