@@ -1555,6 +1555,30 @@ body.nav-open .menu-toggle span:last-child { top: 18px; transform: translateX(-5
 .mini-cover--petro::after { background: rgba(232, 176, 75, 0.3); }
 .mini-cover--bot { background: radial-gradient(circle at 30% 20%, #14303a, #0d1518 70%); }
 .mini-cover--bot::after { background: rgba(123, 214, 176, 0.26); }
+.mini-cover--guide { background: radial-gradient(circle at 70% 20%, #1c2740, #0e131c 70%); }
+.mini-cover--guide::after { background: rgba(143, 168, 255, 0.3); }
+.mini-cover--sakura { background: radial-gradient(circle at 30% 20%, #3b1d29, #170d12 70%); }
+.mini-cover--sakura::after { background: rgba(240, 166, 189, 0.3); }
+.mini-cover--manga { background: radial-gradient(circle at 70% 20%, #2d1a3d, #130f1a 70%); }
+.mini-cover--manga::after { background: rgba(185, 160, 240, 0.3); }
+.mini-cover--template { background: radial-gradient(circle at 30% 20%, #14303a, #0d1518 70%); }
+.mini-cover--template::after { background: rgba(134, 214, 224, 0.28); }
+.mini-cover--news { background: radial-gradient(circle at 70% 20%, #38191a, #170d0d 70%); }
+.mini-cover--news::after { background: rgba(232, 154, 143, 0.28); }
+.mini-cover--travel { background: radial-gradient(circle at 30% 20%, #15323a, #0c1518 70%); }
+.mini-cover--travel::after { background: rgba(143, 212, 232, 0.28); }
+.mini-cover--league { background: radial-gradient(circle at 70% 20%, #17301c, #0c140e 70%); }
+.mini-cover--league::after { background: rgba(154, 212, 143, 0.28); }
+.mini-cover--event { background: radial-gradient(circle at 30% 20%, #33260f, #15110a 70%); }
+.mini-cover--event::after { background: rgba(232, 176, 75, 0.3); }
+.mini-cover--sayar { background: radial-gradient(circle at 70% 20%, #35203a, #160f18 70%); }
+.mini-cover--sayar::after { background: rgba(233, 160, 200, 0.28); }
+.mini-cover--plants { background: radial-gradient(circle at 30% 20%, #16301f, #0b140f 70%); }
+.mini-cover--plants::after { background: rgba(143, 212, 160, 0.28); }
+.mini-cover--distribution { background: radial-gradient(circle at 70% 20%, #1b2638, #0e1218 70%); }
+.mini-cover--distribution::after { background: rgba(143, 179, 232, 0.3); }
+.mini-cover--hub { background: radial-gradient(circle at 30% 20%, #26262a, #111113 70%); }
+.mini-cover--hub::after { background: rgba(200, 200, 205, 0.22); }
 
 .mini-lines {
   position: absolute;
