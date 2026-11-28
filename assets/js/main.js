@@ -335,7 +335,7 @@
         ["Year", "2026"],
         ["Status", "Shipped"],
         ["Role", "Full-stack & mobile"],
-        ["Access", "Client delivery"]
+        ["Access", "Private product"]
       ],
       sections: [
         {
@@ -363,7 +363,7 @@
         }
       ],
       stack: ["Laravel 11", "Inertia", "React", "Flutter", "MySQL", "Google Maps", "Flutter Map", "Firebase"],
-      note: "Client delivery — organisation name and operational screenshots are withheld."
+      note: "Private product — organisation name and operational screenshots are withheld."
     },
     licence: {
       kicker: "04 · Enterprise · 2026",
@@ -402,6 +402,432 @@
       ],
       stack: ["Laravel 11", "React 19", "Vite", "Tailwind 4", "PrimeReact", "TanStack Query", "Sanctum", "MySQL"],
       note: "Client work — company name, brand, screenshots and repository are withheld."
+    },
+    micine: {
+      kicker: "05 · Client · Insurance",
+      title: "Micine / Minum platform",
+      tagline: "Application, customer portal and policy admin for a Japanese insurance product.",
+      meta: [
+        ["Role", "Full-stack engineering"],
+        ["Status", "Client delivery"],
+        ["Access", "Under NDA"]
+      ],
+      sections: [
+        {
+          h: "The brief",
+          p: "A Japanese insurer needed one product for applications, a customer portal and policy administration — with the paperwork, status and permissions that insurance work demands."
+        },
+        {
+          h: "What I built",
+          list: [
+            "An application flow that captures what a policy needs before review, with clear states for the applicant and the back office.",
+            "A customer portal where policyholders can see their cover and the status of a request.",
+            "Policy administration screens built around the client's Japanese-language workflows.",
+            "A React front end over a Laravel API, with supporting services on AWS."
+          ]
+        },
+        {
+          h: "What I learned",
+          p: "Insurance is a domain where wording is a contract. The engineering lesson was to keep policy state explicit — one source of truth every screen reads — instead of inferring it differently on each page."
+        }
+      ],
+      stack: ["Laravel", "React", "AWS", "Rust"],
+      note: "Client work — brand, screenshots and repository are withheld."
+    },
+    car: {
+      kicker: "06 · Product · Mobility",
+      title: "Car rental platform",
+      tagline: "An Expo customer app plus a Laravel/Inertia console for listings, bookings, drivers and chat.",
+      meta: [
+        ["Role", "Product engineering"],
+        ["Status", "Shipped"],
+        ["Access", "Under NDA"]
+      ],
+      sections: [
+        {
+          h: "The brief",
+          p: "Renting a car involves three parties and a calendar: the customer, the car and the driver. The product had to keep all three in sync from listing to confirmed booking."
+        },
+        {
+          h: "What I built",
+          list: [
+            "An Expo / React Native customer app for browsing cars, checking availability and booking.",
+            "A Laravel + Inertia console for listings, bookings, drivers and chat.",
+            "A shared API so the app and the console read the same availability."
+          ]
+        },
+        {
+          h: "What I learned",
+          p: "A booking is a small state machine. Once I modelled it as states instead of scattered flags, the UI and the edge cases got simpler."
+        }
+      ],
+      stack: ["Expo", "React Native", "Laravel", "Inertia"],
+      note: "Under NDA — code walkthrough available on request."
+    },
+    chem: {
+      kicker: "07 · Product · Education",
+      title: "ChemTeacher",
+      tagline: "A G10–G12 chemistry study app for Myanmar students, with pricing, referrals and resellers.",
+      meta: [
+        ["Role", "Product engineering"],
+        ["Status", "Shipped"],
+        ["Access", "Commercial product"]
+      ],
+      sections: [
+        {
+          h: "The brief",
+          p: "Chemistry students in Myanmar study for high-stakes exams, often on shared phones. The app had to be affordable, easy to try, and simple for local partners to resell."
+        },
+        {
+          h: "What I built",
+          list: [
+            "The Flutter study app for G10–G12 chemistry.",
+            "Pricing and access plans built around local payment habits.",
+            "Referral rewards and reseller tooling so teachers can distribute it.",
+            "A Laravel / MySQL backend for accounts, plans and referrals."
+          ]
+        },
+        {
+          h: "What I learned",
+          p: "Selling to students is a design constraint: shared devices, interrupted payments, and a need to prove value in the first session."
+        }
+      ],
+      stack: ["Flutter", "Laravel", "MySQL"],
+      note: "Commercial product — repository is private."
+    },
+    vibe: {
+      kicker: "08 · Automation · Education",
+      title: "Vibe Learning marketing HQ",
+      tagline: "Agents draft the posts, but a teacher and a human decide what ships.",
+      meta: [
+        ["Role", "Automation & full-stack"],
+        ["Status", "In use"],
+        ["Access", "Private repo"]
+      ],
+      sections: [
+        {
+          h: "The brief",
+          p: "A Grade 12 study app needs a steady presence on Telegram and TikTok, but posting by hand is slow. Study content is also unforgiving: a wrong formula or a guaranteed-pass claim does damage a deleted post cannot undo."
+        },
+        {
+          h: "What I built",
+          list: [
+            "A four-stage agent pipeline — content writer, graphic designer, video editor and post admin — that turns a content calendar into drafts in a JSON approval queue.",
+            "A brand-rules guard enforcing caption limits, hashtags, the app link, an AIGC label for TikTok, and a banned-phrase list in Burmese and English.",
+            "An academic QA gate: lesson posts stay blocked until a teacher marks every fact, formula and unit as verified.",
+            "Telegram publishing through the Bot API, TikTok caption and asset staging for manual upload, and a watch mode that posts approved items on an Asia/Yangon schedule.",
+            "A local dashboard for the queue, the team view and the active brand rules, served by a small dependency-free Node server."
+          ]
+        },
+        {
+          h: "Engineering notes",
+          p: "Node 18+ with ES modules and no framework: the queue is plain JSON, the dashboard is vanilla JS, and every action is a CLI command or a button. Drafts are idempotent, so re-running the calendar never duplicates posts. The default is safe — nothing publishes without approval, and nothing lesson-related publishes without QA."
+        },
+        {
+          h: "What I learned",
+          p: "Approval gates are a product feature, not friction. Writing the banned-phrase list and the QA gate forced me to define what correct means for the brand, and the system is more trustworthy because it can refuse to publish."
+        }
+      ],
+      stack: ["Node.js 18+", "Telegram Bot API", "TikTok Content Posting API", "OpenAI-compatible APIs", "JSON queue", "Vanilla JS"],
+      note: "Private repository — the dashboard and queue run locally. Walkthrough available on request."
+    },
+    aws: {
+      kicker: "09 · Lab · Cloud",
+      title: "AWS foundations lab",
+      tagline: "Learn the cloud by building it, then write the guide that proves you understood it.",
+      meta: [
+        ["Role", "Self-directed lab"],
+        ["Status", "Ongoing"],
+        ["Access", "Learning lab"]
+      ],
+      sections: [
+        {
+          h: "The brief",
+          p: "I learn infrastructure best by breaking it. The lab exists to make AWS concepts concrete, and the guide exists to test whether I can explain them to someone starting from zero."
+        },
+        {
+          h: "What I built",
+          list: [
+            "EC2, IAM roles and policies, SSM Session Manager and S3 remote state, wired together with Terraform.",
+            "An environment I can apply, inspect and tear down without console clicking.",
+            "A beginner guide in Burmese and English that walks through each piece."
+          ]
+        },
+        {
+          h: "What I learned",
+          p: "If I cannot explain why an IAM policy is shaped the way it is, I do not understand it yet. Writing the guide is the real review."
+        }
+      ],
+      stack: ["Terraform", "AWS", "EC2", "IAM", "SSM", "S3"],
+      note: "Learning lab — the write-up is shared with beginners."
+    },
+    petro: {
+      kicker: "10 · Product · Retail",
+      title: "Petro fuel station",
+      tagline: "Purchases, sales, stock balances, suppliers, payments and financial records in one ledger.",
+      meta: [
+        ["Role", "Full-stack"],
+        ["Status", "Shipped"],
+        ["Access", "Private product"]
+      ],
+      sections: [
+        {
+          h: "The brief",
+          p: "A fuel station runs on litres and cash. Purchases, sales, stock balances, suppliers and payments all have to reconcile, and a spreadsheet stops being an answer once the station gets busy."
+        },
+        {
+          h: "What I built",
+          list: [
+            "Purchases, sales and stock balances in one ledger.",
+            "Suppliers, payments and financial records tied to the same transactions.",
+            "A Laravel + Inertia + TypeScript back office built for daily use."
+          ]
+        },
+        {
+          h: "What I learned",
+          p: "Retail back offices live or die on reconciliation. The ledger has to explain every litre, not just the totals."
+        }
+      ],
+      stack: ["Laravel", "Inertia", "TypeScript"],
+      note: "Private product — repository and screenshots are not public."
+    },
+    bot: {
+      kicker: "11 · Product · Automation",
+      title: "Delivery bot",
+      tagline: "Telegram and Viber bots that turn delivery requests into a trackable flow.",
+      meta: [
+        ["Role", "Bot development"],
+        ["Status", "In production"],
+        ["Access", "Private"]
+      ],
+      sections: [
+        {
+          h: "The brief",
+          p: "Delivery requests arrive as chat messages on Telegram and Viber. Without structure, every request becomes a phone call and nothing is trackable."
+        },
+        {
+          h: "What I built",
+          list: [
+            "Telegram and Viber bots that capture a delivery request as structured data.",
+            "A trackable flow with status updates for the customer and the operator.",
+            "Notifications that tell both sides what happens next."
+          ]
+        },
+        {
+          h: "What I learned",
+          p: "A chat bot is a UI with no screen. Every state needs a message, and that message is the interface."
+        }
+      ],
+      stack: ["Python", "Telegram", "Viber"],
+      note: "Operational tool — conversation screenshots withheld."
+    },
+    guide: {
+      kicker: "12 · Product · AI",
+      title: "Guide4U study companion",
+      tagline: "Grade 12 answers grounded in the official textbooks, explained in Burmese with the English terms kept.",
+      meta: [
+        ["Role", "Full-stack & AI"],
+        ["Status", "Prototype"],
+        ["Access", "Private"]
+      ],
+      sections: [
+        {
+          h: "The brief",
+          p: "Grade 12 students need answers they can trust. A general chatbot invents textbook facts, which is the one thing an exam companion cannot do."
+        },
+        {
+          h: "What I built",
+          list: [
+            "A PHP app that answers from the official textbooks rather than from model memory.",
+            "A retrieval flow that keeps the English technical terms inside Burmese explanations.",
+            "Google Gemini for generation, with grounding supplied by the source text."
+          ]
+        },
+        {
+          h: "What I learned",
+          p: "Grounding is a content problem before it is a model problem. How I split and indexed the textbooks mattered more than the prompt."
+        }
+      ],
+      stack: ["PHP", "RAG", "Gemini"],
+      note: "Prototype — code walkthrough available on request."
+    },
+    travel: {
+      kicker: "13 · Web · Travel",
+      title: "Travel & tour site",
+      tagline: "A tour-operator site with recommended itineraries, galleries and a responsive Bootstrap front end.",
+      meta: [
+        ["Role", "Front-end"],
+        ["Status", "Shipped"],
+        ["Access", "Live site"]
+      ],
+      sections: [
+        {
+          h: "The brief",
+          p: "A tour operator needed a site that sells trips: clear itineraries, good photography and a layout that works on a phone."
+        },
+        {
+          h: "What I built",
+          list: [
+            "Itinerary pages with day-by-day plans and galleries.",
+            "A responsive Bootstrap front end."
+          ]
+        },
+        {
+          h: "What I learned",
+          p: "Tour pages sell with photography, so image weight was the real performance budget."
+        }
+      ],
+      stack: ["HTML", "CSS", "Bootstrap"],
+      note: "Live site — the link is on the card."
+    },
+    event: {
+      kicker: "14 · Web · Operations",
+      title: "Event management system",
+      tagline: "A Laravel back office for creating events and tracking attendees.",
+      meta: [
+        ["Role", "Back-office build"],
+        ["Status", "Delivered"],
+        ["Access", "Private"]
+      ],
+      sections: [
+        {
+          h: "The brief",
+          p: "Running an event means creating it once and then chasing attendance. The back office had to make both parts boring."
+        },
+        {
+          h: "What I built",
+          list: [
+            "A Laravel back office for creating events.",
+            "Attendee tracking tied to each event.",
+            "Laravel Breeze for authentication."
+          ]
+        },
+        {
+          h: "What I learned",
+          p: "Event tools are check-in tools in disguise. The most useful screen is the one staff open at the door."
+        }
+      ],
+      stack: ["Laravel", "MySQL", "Breeze"],
+      note: "Private back office."
+    },
+    sayar: {
+      kicker: "15 · Lab · Fintech",
+      title: "Sayar bookkeeping assistant",
+      tagline: "A Burmese-first ledger for home-based women micro-entrepreneurs — AI drafts each record, the owner confirms before it is saved.",
+      meta: [
+        ["Role", "Product prototype"],
+        ["Status", "Prototype"],
+        ["Access", "Concept"]
+      ],
+      sections: [
+        {
+          h: "The brief",
+          p: "Home-based women micro-entrepreneurs keep accounts in their heads or on paper. An app has to speak Burmese first and never move money without the owner's confirmation."
+        },
+        {
+          h: "What I built",
+          list: [
+            "A Burmese-first ledger for income and expenses.",
+            "AI that drafts a record from a short description.",
+            "A confirm step before anything is saved, so the owner stays the author of the books."
+          ]
+        },
+        {
+          h: "What I learned",
+          p: "For money, AI should propose and a human should commit. The confirmation step is the product, not the model."
+        }
+      ],
+      stack: ["Laravel", "AI", "Burmese UI"],
+      note: "Prototype built for a social-impact brief."
+    },
+    plants: {
+      kicker: "16 · Lab · IoT",
+      title: "PlantsFriend",
+      tagline: "ESP32 sensors feed a Laravel API and a React Native app for monitoring a plant's readings.",
+      meta: [
+        ["Role", "Full-stack & hardware"],
+        ["Status", "Prototype"],
+        ["Access", "Private"]
+      ],
+      sections: [
+        {
+          h: "The brief",
+          p: "Houseplants die quietly. The idea was to make a plant's readings visible on the phone before the leaves explain it."
+        },
+        {
+          h: "What I built",
+          list: [
+            "ESP32 sensors sending readings to a Laravel API.",
+            "A React Native app that charts the readings.",
+            "A small hardware-to-API path I could test end to end."
+          ]
+        },
+        {
+          h: "What I learned",
+          p: "Hardware makes failure visible. When a packet drops, the chart has a gap — and the UI has to admit the gap rather than smooth it over."
+        }
+      ],
+      stack: ["ESP32", "Laravel", "React Native"],
+      note: "Personal prototype."
+    },
+    distribution: {
+      kicker: "17 · Lab · Cloud",
+      title: "Distribution reorder automation",
+      tagline: "AWS Lambda and DynamoDB watch stock; Claude drafts purchase orders and Telegram handles approval.",
+      meta: [
+        ["Role", "Cloud & AI"],
+        ["Status", "Prototype"],
+        ["Access", "Private"]
+      ],
+      sections: [
+        {
+          h: "The brief",
+          p: "Reorder decisions sat with one person and a stock sheet. The experiment: can serverless and an LLM remove the busywork without removing the judgement?"
+        },
+        {
+          h: "What I built",
+          list: [
+            "AWS Lambda and DynamoDB watching stock levels.",
+            "Claude drafting a purchase order when stock crosses a threshold.",
+            "Telegram as the approval surface, so a human still signs off."
+          ]
+        },
+        {
+          h: "What I learned",
+          p: "Automating a purchase order is easy; making the approval safe is the work. The bot has to show the numbers behind each draft."
+        }
+      ],
+      stack: ["AWS SAM", "Bedrock", "DynamoDB", "Telegram"],
+      note: "Internal experiment."
+    },
+    hub: {
+      kicker: "18 · Lab · Tooling",
+      title: "Local dev launcher",
+      tagline: "A small Node hub that starts several local projects on free ports and opens them from one dashboard.",
+      meta: [
+        ["Role", "Tooling"],
+        ["Status", "In use"],
+        ["Access", "Private"]
+      ],
+      sections: [
+        {
+          h: "The brief",
+          p: "Several local projects, the same ports, and a pile of terminal tabs. The fix did not need to be a platform."
+        },
+        {
+          h: "What I built",
+          list: [
+            "A small Node / Express hub that starts each project on a free port.",
+            "One dashboard to open them all."
+          ]
+        },
+        {
+          h: "What I learned",
+          p: "The best internal tool is the one you stop noticing. Local, small, no login."
+        }
+      ],
+      stack: ["Node.js", "Express", "Tooling"],
+      note: "Personal tooling."
     }
   };
 
@@ -487,7 +913,7 @@
         ["နှစ်", "2026"],
         ["အခြေအနေ", "ထုတ်လုပ်ပြီး"],
         ["အခန်းကဏ္ဍ", "ဖူးလ်စတက် နှင့် မိုဘိုင်း"],
-        ["အသုံးပြုခွင့်", "ဖောက်သည်အတွက် ပေးအပ်ပြီး"]
+        ["အသုံးပြုခွင့်", "သီးသန့်ထုတ်ကုန်"]
       ],
       sections: [
         {
@@ -514,7 +940,7 @@
           p: "ခွဲဝေသူများ တိုက်ရိုက်အခြေအနေ တစ်ခုတည်းကို ရရှိပြီး ယာဉ်မောင်းများ ဖုန်း app ရကာ လုပ်ခငွေတွက်ချက်မှုသည် လစဉ် ရှာဖွေတူးဖော်ရသည့် အလုပ်မဖြစ်တော့ပါ။ ပလက်ဖောင်းက ခရီးစဉ်များ၊ တက္ကစီများ၊ ပါဆယ်များ၊ ယာဉ်မောင်းများ၊ ဂိတ်များနှင့် ငွေကြေးကို တစ်နေရာတည်းတွင် ဖုံးလွှမ်းသည်။"
         }
       ],
-      note: "ဖောက်သည်အတွက် ပေးအပ်မှု — အဖွဲ့အစည်းအမည်နှင့် လုပ်ငန်းလည်ပတ်မှု screenshot များကို ချန်လှပ်ထားသည်။"
+      note: "သီးသန့်ထုတ်ကုန် — အဖွဲ့အစည်းအမည်နှင့် လုပ်ငန်းလည်ပတ်မှု screenshot များကို ချန်လှပ်ထားသည်။"
     },
     licence: {
       kicker: "04 · လုပ်ငန်းကြီး · 2026",
@@ -552,6 +978,418 @@
         }
       ],
       note: "ဖောက်သည်လုပ်ငန်း — ကုမ္ပဏီအမည်၊ ဘရန်၊ screenshot များနှင့် repository ကို ချန်လှပ်ထားသည်။"
+    },
+    micine: {
+      kicker: "05 · ဖောက်သည်လုပ်ငန်း · အာမခံ",
+      title: "Micine / Minum ပလက်ဖောင်း",
+      tagline: "ဂျပန်အာမခံထုတ်ကုန်တစ်ခုအတွက် လျှောက်လွှာ၊ ဖောက်သည်ပေါ်တယ်နှင့် ပေါ်လစီစီမံခန့်ခွဲမှု။",
+      meta: [
+        ["အခန်းကဏ္ဍ", "ဖူးလ်စတက် အင်ဂျင်နီယာ"],
+        ["အခြေအနေ", "ဖောက်သည်လုပ်ငန်း ပေးအပ်ပြီး"],
+        ["အသုံးပြုခွင့်", "NDA အောက်"]
+      ],
+      sections: [
+        {
+          h: "အလုပ်အကျဉ်း",
+          p: "ဂျပန်အာမခံကုမ္ပဏီတစ်ခုအတွက် လျှောက်လွှာ၊ ဖောက်သည်ပေါ်တယ်နှင့် ပေါ်လစီစီမံခန့်ခွဲမှုကို စနစ်တစ်ခုတည်းတွင် စုစည်းရန် လိုအပ်ခဲ့သည် — အာမခံလုပ်ငန်း၏ စာရွက်စာတမ်း၊ အခြေအနေနှင့် ခွင့်ပြုချက်လိုအပ်ချက်များနှင့်အတူ။"
+        },
+        {
+          h: "တည်ဆောက်ခဲ့သည်များ",
+          list: [
+            "ပေါ်လစီတစ်ခု စစ်ဆေးမှုမတိုင်မီ လိုအပ်သည့်အချက်များကို ဖမ်းယူပြီး လျှောက်ထားသူနှင့် နောက်ခံရုံး နှစ်ဖက်စလုံး မြင်နိုင်သော အခြေအနေများပါ လျှောက်လွှာလုပ်ငန်းစဉ်။",
+            "ပေါ်လစီပိုင်ရှင်များ မိမိတို့၏ အာမခံအကျုံးဝင်မှုနှင့် တောင်းဆိုမှုအခြေအနေကို ကြည့်နိုင်သော ဖောက်သည်ပေါ်တယ်။",
+            "ဖောက်သည်၏ ဂျပန်ဘာသာ လုပ်ငန်းစဉ်များကို အခြေခံသည့် ပေါ်လစီစီမံခန့်ခွဲမှု မျက်နှာပြင်များ။",
+            "Laravel API ပေါ်တွင် React front end၊ AWS ပေါ်တွင် အထောက်အကူပြု service များ။"
+          ]
+        },
+        {
+          h: "သင်ယူခဲ့သည်များ",
+          p: "အာမခံလုပ်ငန်းတွင် စကားလုံးတစ်လုံးသည် စာချုပ်ဖြစ်သည်။ အင်ဂျင်နီယာသင်ခန်းစာမှာ ပေါ်လစီအခြေအနေကို ရှင်းရှင်းလင်းလင်း ထိန်းထားရန်ဖြစ်သည် — မျက်နှာပြင်တစ်ခုစီတွင် ခန့်မှန်းမနေဘဲ တစ်ခုတည်းသော အရင်းအမြစ်ကို ဖတ်စေရန်။"
+        }
+      ],
+      note: "ဖောက်သည်လုပ်ငန်း — ဘရန်၊ screenshot နှင့် repository ကို ချန်လှပ်ထားသည်။"
+    },
+    car: {
+      kicker: "06 · ထုတ်ကုန် · မော်ဘီလီတီ",
+      title: "ကားအငှား ပလက်ဖောင်း",
+      tagline: "Expo ဖောက်သည် app နှင့် Laravel/Inertia စီမံခန့်ခွဲရေးစနစ် — ကြော်ငြာများ၊ ကြိုတင်မှာယူမှုများ၊ ယာဉ်မောင်းများနှင့် chat။",
+      meta: [
+        ["အခန်းကဏ္ဍ", "ထုတ်ကုန်အင်ဂျင်နီယာ"],
+        ["အခြေအနေ", "ပို့ဆောင်ပြီး"],
+        ["အသုံးပြုခွင့်", "NDA အောက်တွင်"]
+      ],
+      sections: [
+        {
+          h: "အလုပ်အကျဉ်း",
+          p: "ကားငှားခြင်းတွင် ပါဝင်သူသုံးဦးနှင့် ပြက္ခဒိန်တစ်ခု ရှိသည် — ဖောက်သည်၊ ကားနှင့် ယာဉ်မောင်း။ ကြော်ငြာမှ အတည်ပြုထားသော ကြိုတင်မှာယူမှုအထိ သုံးဦးစလုံးကို တစ်ပြိုင်နက် ထိန်းညှိရမည်။"
+        },
+        {
+          h: "တည်ဆောက်ခဲ့သည်များ",
+          list: [
+            "ကားများ ရှာဖွေခြင်း၊ ရနိုင်မှုစစ်ဆေးခြင်းနှင့် ကြိုတင်မှာယူခြင်းအတွက် Expo / React Native ဖောက်သည် app။",
+            "ကြော်ငြာများ၊ ကြိုတင်မှာယူမှုများ၊ ယာဉ်မောင်းများနှင့် chat အတွက် Laravel + Inertia စီမံခန့်ခွဲရေးစနစ်။",
+            "app နှင့် စီမံခန့်ခွဲရေးစနစ် တူညီသော ရနိုင်မှုကို ဖတ်နိုင်ရန် မျှဝေ API။"
+          ]
+        },
+        {
+          h: "သင်ယူခဲ့သည်များ",
+          p: "ကြိုတင်မှာယူမှုတစ်ခုသည် အခြေအနေအဆင့်ဆင့် စက်ငယ်တစ်ခုဖြစ်သည်။ အလံများ ဖြန့်ထားမည့်အစား အခြေအနေများအဖြစ် ပုံစံချလိုက်သည်နှင့် UI နှင့် ထောင့်ကွက်အခြေအနေများ ရိုးရှင်းလာသည်။"
+        }
+      ],
+      note: "NDA အောက်တွင် — ကုဒ်လမ်းညွှန်ကို တောင်းဆိုပါက ရယူနိုင်သည်။"
+    },
+    chem: {
+      kicker: "07 · ထုတ်ကုန် · ပညာရေး",
+      title: "ChemTeacher",
+      tagline: "မြန်မာကျောင်းသားများအတွက် G10–G12 ဓာတုဗေဒ လေ့လာရေး app — ဈေးနှုန်း၊ မိတ်ဆက်မှုနှင့် ပြန်လည်ရောင်းချသူများ အပါအဝင်။",
+      meta: [
+        ["အခန်းကဏ္ဍ", "ထုတ်ကုန်အင်ဂျင်နီယာ"],
+        ["အခြေအနေ", "ပို့ဆောင်ပြီး"],
+        ["အသုံးပြုခွင့်", "စီးပွားရေးထုတ်ကုန်"]
+      ],
+      sections: [
+        {
+          h: "အလုပ်အကျဉ်း",
+          p: "မြန်မာကျောင်းသားများသည် ဖုန်းမျှဝေသုံးစွဲရသည့်အခြေအနေတွင် အရေးကြီးစာမေးပွဲများအတွက် ဓာတုဗေဒ လေ့လာကြသည်။ app သည် ဈေးနှုန်းတတ်နိုင်ရမည်၊ စမ်းသုံးလွယ်ရမည်၊ ဒေသခံလုပ်ဖော်ကိုင်ဖက်များ ပြန်လည်ရောင်းချရန် လွယ်ကူရမည်။"
+        },
+        {
+          h: "တည်ဆောက်ခဲ့သည်များ",
+          list: [
+            "G10–G12 ဓာတုဗေဒအတွက် Flutter လေ့လာရေး app။",
+            "ဒေသခံငွေပေးချေမှုအလေ့အထနှင့် ကိုက်ညီသော ဈေးနှုန်းနှင့် အသုံးပြုခွင့်အစီအစဉ်များ။",
+            "ဆရာများ ဖြန့်ဝေနိုင်ရန် မိတ်ဆက်မှုဆုလာဘ်များနှင့် ပြန်လည်ရောင်းချသူ ကိရိယာများ။",
+            "အကောင့်၊ အစီအစဉ်နှင့် မိတ်ဆက်မှုများအတွက် Laravel / MySQL backend။"
+          ]
+        },
+        {
+          h: "သင်ယူခဲ့သည်များ",
+          p: "ကျောင်းသားများထံ ရောင်းချခြင်းသည် ဒီဇိုင်းကန့်သတ်ချက်တစ်ခုဖြစ်သည် — မျှဝေသုံးဖုန်းများ၊ ပြတ်တောက်သော ငွေပေးချေမှုများနှင့် ပထမဆုံးအစည်းအဝေးတွင် တန်ဖိုးကို သက်သေပြရန် လိုအပ်ချက်။"
+        }
+      ],
+      note: "စီးပွားရေးထုတ်ကုန် — repository သီးသန့်။"
+    },
+    vibe: {
+      kicker: "08 · အလိုအလျောက်စနစ် · ပညာရေး",
+      title: "Vibe Learning မားကတ်တင်း HQ",
+      tagline: "Agent များက မူကြမ်းရေးသည်၊ သို့သော် ဘာကို ထုတ်ဝေမည်ကို ဆရာနှင့် လူသားက ဆုံးဖြတ်သည်။",
+      meta: [
+        ["အခန်းကဏ္ဍ", "အလိုအလျောက်စနစ်နှင့် ဖူးလ်စတက်"],
+        ["အခြေအနေ", "အသုံးပြုနေဆဲ"],
+        ["အသုံးပြုခွင့်", "သီးသန့် repository"]
+      ],
+      sections: [
+        {
+          h: "အလုပ်အကျဉ်း",
+          p: "Grade 12 လေ့လာရေး app တစ်ခုသည် Telegram နှင့် TikTok တွင် ပုံမှန်တင်ထားရန် လိုအပ်သည်၊ သို့သော် ကိုယ်တိုင်တင်ခြင်းသည် နှေးသည်။ လေ့လာရေးအကြောင်းအရာသည် အမှားမခံနိုင်သော နယ်ပယ်ဖြစ်သည် — မှားသော ဖော်မြူလာ သို့မဟုတ် အောင်မြင်မည်ဟု အာမခံသည့် စကားသည် ပို့စ်ဖျက်လိုက်ရုံနှင့် မပြန်လည်နိုင်သော ထိခိုက်မှု ဖြစ်စေသည်။"
+        },
+        {
+          h: "တည်ဆောက်ခဲ့သည်များ",
+          list: [
+            "အကြောင်းအရာ ပြက္ခဒိန်ကို JSON အတည်ပြုချက်တန်းထဲ မူကြမ်းအဖြစ် ပြောင်းပေးသည့် အဆင့်လေးဆင့် agent လုပ်ငန်းစဉ် — content writer၊ graphic designer၊ video editor နှင့် post admin။",
+            "စာသားအရှည်ကန့်သတ်ချက်၊ hashtag၊ app link၊ TikTok အတွက် AIGC အမှတ်အသားနှင့် မြန်မာ/အင်္ဂလိပ် တားမြစ်စကားလုံးစာရင်းကို ထိန်းချုပ်သည့် ဘရန်စည်းမျဉ်းစောင့်။",
+            "ပညာရေးဆိုင်ရာ QA တံခါး — ဆရာက အချက်၊ ဖော်မြူလာနှင့် ယူနစ်တိုင်းကို အတည်ပြုသည်အထိ သင်ခန်းစာပို့စ်များ ထုတ်ဝေခွင့်မရ။",
+            "Bot API ဖြင့် Telegram ထုတ်ဝေခြင်း၊ ကိုယ်တိုင်တင်ရန် TikTok caption နှင့် asset ပြင်ဆင်ခြင်း၊ Asia/Yangon အချိန်ဇယားအတိုင်း အတည်ပြုပြီးပို့စ်များကို တင်သည့် watch mode။",
+            "တန်း၊ အဖွဲ့နှင့် လက်ရှိဘရန်စည်းမျဉ်းများအတွက် ဒေသတွင်း dashboard — dependency မလိုသော Node server ငယ်တစ်ခုက ဝန်ဆောင်သည်။"
+          ]
+        },
+        {
+          h: "အင်ဂျင်နီယာမှတ်စုများ",
+          p: "Node 18+ နှင့် ES modules၊ framework မပါ။ တန်းသည် JSON ရိုးရိုး၊ dashboard သည် vanilla JS၊ လုပ်ဆောင်ချက်တိုင်းသည် CLI command သို့မဟုတ် ခလုတ်တစ်ခု။ မူကြမ်းများသည် idempotent ဖြစ်သဖြင့် ပြက္ခဒိန်ကို ပြန်လည် run လုပ်လျှင် ပို့စ်များ ထပ်မဖြစ်ပါ။ ပုံသေမှာ ဘေးကင်းသည် — အတည်ပြုချက်မပါဘဲ ဘာမှ မထုတ်ဝေပါ၊ သင်ခန်းစာနှင့်ဆိုင်လျှင် QA မပါဘဲ ဘာမှ မထုတ်ဝေပါ။"
+        },
+        {
+          h: "သင်ယူခဲ့သည်များ",
+          p: "အတည်ပြုချက်တံခါးများသည် ပွတ်တိုက်မှုမဟုတ်ဘဲ ထုတ်ကုန်အင်္ဂါရပ်ဖြစ်သည်။ တားမြစ်စကားလုံးစာရင်းနှင့် QA တံခါးကို ရေးဆွဲရင်း ဘရန်အတွက် မှန်ကန်ခြင်းဆိုသည်မှာ ဘာကို ဆိုလိုသည်ကို သတ်မှတ်ရသည်။ ထုတ်ဝေရန် ငြင်းဆန်နိုင်သောကြောင့် စနစ်က ပိုယုံကြည်ရသည်။"
+        }
+      ],
+      note: "သီးသန့် repository — dashboard နှင့် တန်းကို ဒေသတွင်း run သည်။ လမ်းညွှန်ကို တောင်းဆိုပါက ရယူနိုင်သည်။"
+    },
+    aws: {
+      kicker: "09 · စမ်းသပ်ခန်း · ကလောက်",
+      title: "AWS အခြေခံ စမ်းသပ်ခန်း",
+      tagline: "တည်ဆောက်ပြီး ကလောက်ကို သင်ယူ၊ နားလည်ကြောင်း သက်သေပြသည့် လမ်းညွှန်ကို ရေးသည်။",
+      meta: [
+        ["အခန်းကဏ္ဍ", "ကိုယ်တိုင် သင်ယူသည့် စမ်းသပ်ခန်း"],
+        ["အခြေအနေ", "ဆက်လက်လုပ်ဆောင်နေဆဲ"],
+        ["အသုံးပြုခွင့်", "သင်ယူရေးစမ်းသပ်ခန်း"]
+      ],
+      sections: [
+        {
+          h: "အလုပ်အကျဉ်း",
+          p: "အခြေခံအဆောက်အအုံကို ချိုးဖျက်ကြည့်ခြင်းဖြင့် အကောင်းဆုံး သင်ယူသည်။ စမ်းသပ်ခန်းက AWS အယူအဆများကို တိကျစေရန်၊ လမ်းညွှန်က သုညမှစသူတစ်ဦးကို ရှင်းပြနိုင်ခြင်း ရှိ/မရှိ စမ်းသပ်ရန် ဖြစ်သည်။"
+        },
+        {
+          h: "တည်ဆောက်ခဲ့သည်များ",
+          list: [
+            "EC2၊ IAM role နှင့် policy၊ SSM Session Manager နှင့် S3 remote state ကို Terraform ဖြင့် ချိတ်ဆက်ထားသည်။",
+            "console နှိပ်စရာမလိုဘဲ apply၊ စစ်ဆေး၊ ဖျက်ဆီးနိုင်သော ပတ်ဝန်းကျင်။",
+            "အစိတ်အပိုင်းတစ်ခုစီကို ဖြတ်သန်းရှင်းပြသည့် မြန်မာနှင့် အင်္ဂလိပ် အစပြုသူလမ်းညွှန်။"
+          ]
+        },
+        {
+          h: "သင်ယူခဲ့သည်များ",
+          p: "IAM policy တစ်ခု ဘာကြောင့် ဒီပုံစံရှိသည်ကို မရှင်းပြနိုင်လျှင် နားမလည်သေးပါ။ လမ်းညွှန်ရေးခြင်းသည် အမှန်တကယ် ပြန်လည်စစ်ဆေးမှုဖြစ်သည်။"
+        }
+      ],
+      note: "သင်ယူရေးစမ်းသပ်ခန်း — လမ်းညွှန်ကို အစပြုသူများနှင့် မျှဝေသည်။"
+    },
+    petro: {
+      kicker: "10 · ထုတ်ကုန် · လက်လီ",
+      title: "Petro လောင်စာဆီဆိုင်",
+      tagline: "အဝယ်၊ အရောင်း၊ လက်ကျန်များ၊ ပေးသွင်းသူများ၊ ငွေပေးချေမှုများနှင့် ဘဏ္ဍာရေးမှတ်တမ်းများ။",
+      meta: [
+        ["အခန်းကဏ္ဍ", "ဖူးလ်စတက်"],
+        ["အခြေအနေ", "ပို့ဆောင်ပြီး"],
+        ["အသုံးပြုခွင့်", "သီးသန့်ထုတ်ကုန်"]
+      ],
+      sections: [
+        {
+          h: "အလုပ်အကျဉ်း",
+          p: "လောင်စာဆီဆိုင်သည် လီတာနှင့် ငွေပေါ်တွင် လည်ပတ်သည်။ အဝယ်၊ အရောင်း၊ လက်ကျန်၊ ပေးသွင်းသူနှင့် ငွေပေးချေမှုအားလုံး ကိုက်ညီရမည်။ ဆိုင်များလာလျှင် spreadsheet က အဖြေမဟုတ်တော့ပါ။"
+        },
+        {
+          h: "တည်ဆောက်ခဲ့သည်များ",
+          list: [
+            "အဝယ်၊ အရောင်းနှင့် လက်ကျန်များကို စာရင်းတစ်ခုတည်းတွင်။",
+            "ပေးသွင်းသူများ၊ ငွေပေးချေမှုများနှင့် ဘဏ္ဍာရေးမှတ်တမ်းများကို တူညီသော အရောင်းအဝယ်များနှင့် ချိတ်ဆက်ထားသည်။",
+            "နေ့စဉ်အသုံးပြုရန် Laravel + Inertia + TypeScript နောက်ခံစနစ်။"
+          ]
+        },
+        {
+          h: "သင်ယူခဲ့သည်များ",
+          p: "လက်လီနောက်ခံစနစ်များသည် စာရင်းကိုက်ညီမှုပေါ်တွင် ရှင်သန်သည် သို့မဟုတ် ကျဆင်းသည်။ စာရင်းက လီတာတိုင်းကို ရှင်းပြနိုင်ရမည်၊ စုစုပေါင်းကိုသာ မဟုတ်ပါ။"
+        }
+      ],
+      note: "သီးသန့်ထုတ်ကုန် — repository နှင့် screenshot များကို အများပြည်သူ မမြင်နိုင်ပါ။"
+    },
+    bot: {
+      kicker: "11 · ထုတ်ကုန် · အလိုအလျောက်စနစ်",
+      title: "ပို့ဆောင်ရေး bot",
+      tagline: "Telegram နှင့် Viber မှ ပို့ဆောင်ရေးတောင်းဆိုမှုများကို ခြေရာခံနိုင်သော လုပ်ငန်းစဉ်အဖြစ် ပြောင်းပေးသော bot များ။",
+      meta: [
+        ["အခန်းကဏ္ဍ", "Bot ဖွံ့ဖြိုးတည်ဆောက်မှု"],
+        ["အခြေအနေ", "လုပ်ငန်းသုံး လည်ပတ်နေဆဲ"],
+        ["အသုံးပြုခွင့်", "သီးသန့်"]
+      ],
+      sections: [
+        {
+          h: "အလုပ်အကျဉ်း",
+          p: "ပို့ဆောင်ရေးတောင်းဆိုမှုများသည် Telegram နှင့် Viber chat မက်ဆေ့ချ်အဖြစ် ရောက်လာသည်။ ဖွဲ့စည်းမှုမရှိလျှင် တောင်းဆိုမှုတိုင်း ဖုန်းခေါ်ဆိုမှုဖြစ်လာပြီး ခြေရာခံနိုင်ခြင်း မရှိတော့ပါ။"
+        },
+        {
+          h: "တည်ဆောက်ခဲ့သည်များ",
+          list: [
+            "ပို့ဆောင်ရေးတောင်းဆိုမှုကို ဖွဲ့စည်းထားသော data အဖြစ် ဖမ်းယူသည့် Telegram နှင့် Viber bot များ။",
+            "ဖောက်သည်နှင့် လုပ်ငန်းရှင် နှစ်ဦးစလုံးအတွက် အခြေအနေအပ်ဒိတ်ပါ ခြေရာခံနိုင်သော လုပ်ငန်းစဉ်။",
+            "နှစ်ဖက်စလုံး နောက်တစ်ဆင့် ဘာဖြစ်မည်ကို ပြောသည့် အသိပေးချက်များ။"
+          ]
+        },
+        {
+          h: "သင်ယူခဲ့သည်များ",
+          p: "Chat bot သည် မျက်နှာပြင်မရှိသော UI ဖြစ်သည်။ အခြေအနေတိုင်းအတွက် မက်ဆေ့ချ်တစ်ခု လိုအပ်ပြီး ထိုမက်ဆေ့ချ်သည် မျက်နှာပြင်ဖြစ်သည်။"
+        }
+      ],
+      note: "လုပ်ငန်းသုံးကိရိယာ — စကားပြောမှု screenshot များကို ချန်လှပ်ထားသည်။"
+    },
+    guide: {
+      kicker: "12 · ထုတ်ကုန် · AI",
+      title: "Guide4U လေ့လာရေးအဖော်",
+      tagline: "တရားဝင်ဖတ်စာအုပ်များကို အခြေခံပြီး မြန်မာလို ရှင်းပြသည် — အင်္ဂလိပ်ဝေါဟာရများ မပျက်ဘဲ။",
+      meta: [
+        ["အခန်းကဏ္ဍ", "ဖူးလ်စတက်နှင့် AI"],
+        ["အခြေအနေ", "ရှေ့ပြေးပုံစံ"],
+        ["အသုံးပြုခွင့်", "သီးသန့်"]
+      ],
+      sections: [
+        {
+          h: "အလုပ်အကျဉ်း",
+          p: "Grade 12 ကျောင်းသားများသည် ယုံကြည်နိုင်သော အဖြေများ လိုအပ်သည်။ ယေဘုယျ chatbot သည် ဖတ်စာအုပ်အချက်အလက်များကို လုပ်ကြံတတ်သည် — စာမေးပွဲအဖော်တစ်ခု မလုပ်နိုင်သည့် အရာမှာ ထိုအရာဖြစ်သည်။"
+        },
+        {
+          h: "တည်ဆောက်ခဲ့သည်များ",
+          list: [
+            "မော်ဒယ်၏ မှတ်ဉာဏ်ထဲမှ မဟုတ်ဘဲ တရားဝင်ဖတ်စာအုပ်များမှ ဖြေကြားသည့် PHP app။",
+            "မြန်မာရှင်းလင်းချက်များအတွင်း အင်္ဂလိပ်နည်းပညာဝေါဟာရများကို ထိန်းထားသည့် retrieval လုပ်ငန်းစဉ်။",
+            "မူရင်းစာသားဖြင့် အခြေခံပေးထားသော Google Gemini ဖြင့် ဖန်တီးခြင်း။"
+          ]
+        },
+        {
+          h: "သင်ယူခဲ့သည်များ",
+          p: "Grounding သည် မော်ဒယ်ပြဿနာမတိုင်မီ အကြောင်းအရာပြဿနာဖြစ်သည်။ ဖတ်စာအုပ်များကို မည်သို့ခွဲပြီး index လုပ်သည်က prompt ထက် ပိုအရေးကြီးခဲ့သည်။"
+        }
+      ],
+      note: "ရှေ့ပြေးပုံစံ — ကုဒ်လမ်းညွှန်ကို တောင်းဆိုပါက ရယူနိုင်သည်။"
+    },
+    travel: {
+      kicker: "13 · ဝဘ် · ခရီးသွား",
+      title: "Travel & Tour ဝဘ်ဆိုက်",
+      tagline: "အကြံပြုခရီးစဉ်များ၊ gallery များနှင့် responsive Bootstrap front end ပါ tour လုပ်ငန်းဆိုက်။",
+      meta: [
+        ["အခန်းကဏ္ဍ", "Front-end"],
+        ["အခြေအနေ", "ပို့ဆောင်ပြီး"],
+        ["အသုံးပြုခွင့်", "တိုက်ရိုက်ဆိုက်"]
+      ],
+      sections: [
+        {
+          h: "အလုပ်အကျဉ်း",
+          p: "ခရီးစဉ်လုပ်ငန်းရှင်တစ်ဦးသည် ခရီးစဉ်များ ရောင်းချနိုင်သော ဆိုက်တစ်ခု လိုခဲ့သည် — ရှင်းလင်းသော အစီအစဉ်များ၊ ကောင်းမွန်သော ဓာတ်ပုံများနှင့် ဖုန်းပေါ်တွင် အဆင်ပြေသော layout။"
+        },
+        {
+          h: "တည်ဆောက်ခဲ့သည်များ",
+          list: [
+            "နေ့စဉ်အစီအစဉ်များနှင့် gallery များပါ ခရီးစဉ်စာမျက်နှာများ။",
+            "Responsive Bootstrap front end။"
+          ]
+        },
+        {
+          h: "သင်ယူခဲ့သည်များ",
+          p: "Tour စာမျက်နှာများသည် ဓာတ်ပုံဖြင့် ရောင်းချသည်၊ ထို့ကြောင့် ပုံအလေးချိန်သည် အမှန်တကယ် performance ဘတ်ဂျက် ဖြစ်ခဲ့သည်။"
+        }
+      ],
+      note: "တိုက်ရိုက်ဆိုက် — link ကို ကတ်ပေါ်တွင် ကြည့်ပါ။"
+    },
+    event: {
+      kicker: "14 · ဝဘ် · လုပ်ငန်းစဉ်",
+      title: "Event management စနစ်",
+      tagline: "ပွဲများ ဖန်တီးရန်နှင့် တက်ရောက်သူများကို ခြေရာခံရန် Laravel နောက်ခံစနစ်။",
+      meta: [
+        ["အခန်းကဏ္ဍ", "နောက်ခံစနစ် တည်ဆောက်မှု"],
+        ["အခြေအနေ", "ပေးအပ်ပြီး"],
+        ["အသုံးပြုခွင့်", "သီးသန့်"]
+      ],
+      sections: [
+        {
+          h: "အလုပ်အကျဉ်း",
+          p: "ပွဲတစ်ပွဲ လည်ပတ်ရာတွင် တစ်ကြိမ်ဖန်တီးပြီး တက်ရောက်မှုကို လိုက်ကြည့်ရသည်။ နောက်ခံစနစ်က နှစ်ပိုင်းစလုံးကို ပျင်းစရာဖြစ်စေရမည်။"
+        },
+        {
+          h: "တည်ဆောက်ခဲ့သည်များ",
+          list: [
+            "ပွဲများ ဖန်တီးရန် Laravel နောက်ခံစနစ်။",
+            "ပွဲတစ်ခုစီနှင့် ချိတ်ဆက်ထားသော တက်ရောက်သူ ခြေရာခံမှု။",
+            "အထောက်အထားစိစစ်ရန် Laravel Breeze။"
+          ]
+        },
+        {
+          h: "သင်ယူခဲ့သည်များ",
+          p: "ပွဲကိရိယာများသည် အဝတ်အစားဝတ်ထားသော check-in ကိရိယာများဖြစ်သည်။ အသုံးအဝင်ဆုံး မျက်နှာပြင်မှာ ဝန်ထမ်းများ တံခါးဝတွင် ဖွင့်သည့် မျက်နှာပြင်ဖြစ်သည်။"
+        }
+      ],
+      note: "သီးသန့် နောက်ခံစနစ်။"
+    },
+    sayar: {
+      kicker: "15 · စမ်းသပ်ခန်း · ငွေရေးကြေးရေး",
+      title: "Sayar ငွေစာရင်းအကူ",
+      tagline: "အိမ်တွင်းစီးပွားရေး အမျိုးသမီးငယ်များအတွက် မြန်မာဘာသာဦးစားပေး စာရင်း — AI က မှတ်တမ်းတစ်ခုစီကို မူကြမ်းရေးပြီး ပိုင်ရှင်က မသိမ်းမီ အတည်ပြုသည်။",
+      meta: [
+        ["အခန်းကဏ္ဍ", "ထုတ်ကုန် ရှေ့ပြေးပုံစံ"],
+        ["အခြေအနေ", "ရှေ့ပြေးပုံစံ"],
+        ["အသုံးပြုခွင့်", "အယူအဆ"]
+      ],
+      sections: [
+        {
+          h: "အလုပ်အကျဉ်း",
+          p: "အိမ်တွင်းစီးပွားရေး အမျိုးသမီးငယ်များသည် စာရင်းများကို ခေါင်းထဲ သို့မဟုတ် စာရွက်ပေါ်တွင် ထားသည်။ app သည် မြန်မာဘာသာကို ဦးစားပေးရမည်၊ ပိုင်ရှင် အတည်မပြုဘဲ ငွေကို ဘယ်တော့မှ မရွှေ့ရ။"
+        },
+        {
+          h: "တည်ဆောက်ခဲ့သည်များ",
+          list: [
+            "ဝင်ငွေ/အသုံးစရိတ်အတွက် မြန်မာဘာသာဦးစားပေး စာရင်း။",
+            "ဖော်ပြချက်တိုတစ်ခုမှ မှတ်တမ်းကို မူကြမ်းရေးပေးသည့် AI။",
+            "မသိမ်းမီ အတည်ပြုအဆင့် — စာရင်း၏ စာရေးသူအဖြစ် ပိုင်ရှင် ဆက်ရှိနေစေရန်။"
+          ]
+        },
+        {
+          h: "သင်ယူခဲ့သည်များ",
+          p: "ငွေအတွက် AI က အဆိုပြုရမည်၊ လူသားက အတည်ပြုရမည်။ အတည်ပြုအဆင့်သည် မော်ဒယ်မဟုတ်ဘဲ ထုတ်ကုန်ဖြစ်သည်။"
+        }
+      ],
+      note: "လူမှုအကျိုးပြုအလုပ်အတွက် တည်ဆောက်ထားသော ရှေ့ပြေးပုံစံ။"
+    },
+    plants: {
+      kicker: "16 · စမ်းသပ်ခန်း · IoT",
+      title: "PlantsFriend",
+      tagline: "ESP32 sensor များက Laravel API သို့ အချက်အလက်ပို့ပြီး React Native app က အပင်၏ တိုင်းတာမှုများကို စောင့်ကြည့်သည်။",
+      meta: [
+        ["အခန်းကဏ္ဍ", "ဖူးလ်စတက်နှင့် hardware"],
+        ["အခြေအနေ", "ရှေ့ပြေးပုံစံ"],
+        ["အသုံးပြုခွင့်", "သီးသန့်"]
+      ],
+      sections: [
+        {
+          h: "အလုပ်အကျဉ်း",
+          p: "အိမ်အပင်များသည် တိတ်တဆိတ် သေသည်။ အကြံက အရွက်များ မပြောမီ အပင်၏ တိုင်းတာမှုများကို ဖုန်းပေါ်တွင် မြင်ရစေရန် ဖြစ်သည်။"
+        },
+        {
+          h: "တည်ဆောက်ခဲ့သည်များ",
+          list: [
+            "တိုင်းတာမှုများကို Laravel API သို့ ပို့သည့် ESP32 sensor များ။",
+            "တိုင်းတာမှုများကို ဂရပ်ဆွဲပြသည့် React Native app။",
+            "အစမှအဆုံး စမ်းသပ်နိုင်သော hardware-မှ-API လမ်းကြောင်းငယ်။"
+          ]
+        },
+        {
+          h: "သင်ယူခဲ့သည်များ",
+          p: "Hardware က ကျရှုံးမှုကို မြင်သာစေသည်။ packet ကျသွားလျှင် ဂရပ်တွင် ကွက်လပ်ရှိသည် — UI က ထိုကွက်လပ်ကို ဖျောက်မနေဘဲ ဝန်ခံရမည်။"
+        }
+      ],
+      note: "ကိုယ်ပိုင် ရှေ့ပြေးပုံစံ။"
+    },
+    distribution: {
+      kicker: "17 · စမ်းသပ်ခန်း · ကလောက်",
+      title: "Distribution အမှာစာ အလိုအလျောက်စနစ်",
+      tagline: "AWS Lambda နှင့် DynamoDB က လက်ကျန်ကို စောင့်ကြည့်သည်၊ Claude က အဝယ်အမိန့် မူကြမ်းရေးပြီး Telegram က အတည်ပြုမှုကို ကိုင်တွယ်သည်။",
+      meta: [
+        ["အခန်းကဏ္ဍ", "ကလောက်နှင့် AI"],
+        ["အခြေအနေ", "ရှေ့ပြေးပုံစံ"],
+        ["အသုံးပြုခွင့်", "သီးသန့်"]
+      ],
+      sections: [
+        {
+          h: "အလုပ်အကျဉ်း",
+          p: "ပြန်မှာယူရေး ဆုံးဖြတ်ချက်များသည် လူတစ်ဦးနှင့် လက်ကျန်စာရွက်ပေါ်တွင် မူတည်နေသည်။ စမ်းသပ်မှု — serverless နှင့် LLM က အလုပ်ပင်ပန်းမှုကို ဖယ်ရှားနိုင်ပြီး ဆုံးဖြတ်ချက်ကို မဖယ်ရှားနိုင်သလား။"
+        },
+        {
+          h: "တည်ဆောက်ခဲ့သည်များ",
+          list: [
+            "လက်ကျန်အဆင့်များကို စောင့်ကြည့်သည့် AWS Lambda နှင့် DynamoDB။",
+            "လက်ကျန် သတ်မှတ်အဆင့်ကို ကျော်လျှင် Claude က အဝယ်အမိန့် မူကြမ်းရေးသည်။",
+            "လူသား အတည်ပြုဆဲရှိရန် အတည်ပြုမျက်နှာပြင်အဖြစ် Telegram။"
+          ]
+        },
+        {
+          h: "သင်ယူခဲ့သည်များ",
+          p: "အဝယ်အမိန့်ကို အလိုအလျောက်လုပ်ခြင်း လွယ်သည်၊ အတည်ပြုမှုကို ဘေးကင်းစေခြင်းက အလုပ်ဖြစ်သည်။ bot က မူကြမ်းတစ်ခုစီ၏ နောက်က နံပါတ်များကို ပြရမည်။"
+        }
+      ],
+      note: "အတွင်းပိုင်း စမ်းသပ်မှု။"
+    },
+    hub: {
+      kicker: "18 · စမ်းသပ်ခန်း · ကိရိယာ",
+      title: "Local dev စတင်ကိရိယာ",
+      tagline: "ဒေသတွင်းပရောဂျက်များကို လွတ်နေသော port များတွင် စတင်ပေးပြီး dashboard တစ်ခုမှ ဖွင့်ပေးသည့် Node hub ငယ်။",
+      meta: [
+        ["အခန်းကဏ္ဍ", "ကိရိယာ တည်ဆောက်မှု"],
+        ["အခြေအနေ", "အသုံးပြုနေဆဲ"],
+        ["အသုံးပြုခွင့်", "သီးသန့်"]
+      ],
+      sections: [
+        {
+          h: "အလုပ်အကျဉ်း",
+          p: "ဒေသတွင်းပရောဂျက်များစွာ၊ တူညီသော port များနှင့် terminal tab အမြောက်အမြား။ ဖြေရှင်းချက်သည် platform တစ်ခု မဖြစ်ဖို့ လိုအပ်သည်။"
+        },
+        {
+          h: "တည်ဆောက်ခဲ့သည်များ",
+          list: [
+            "ပရောဂျက်တစ်ခုစီကို လွတ်နေသော port တွင် စတင်ပေးသည့် Node / Express hub ငယ်။",
+            "အားလုံးကို ဖွင့်ရန် dashboard တစ်ခု။"
+          ]
+        },
+        {
+          h: "သင်ယူခဲ့သည်များ",
+          p: "အကောင်းဆုံး အတွင်းပိုင်းကိရိယာသည် သတိမထားမိတော့သည့် ကိရိယာဖြစ်သည်။ ဒေသတွင်း၊ ငယ်၊ login မလို။"
+        }
+      ],
+      note: "ကိုယ်ပိုင် ကိရိယာ။"
     }
   };
 
